@@ -1,2 +1,5 @@
 # hronmartin.github.io
-My own tree website.
+- Osobní web
+- Struktura odkazování 
+- HTML a CSS
+- Autor: Martin Hron
