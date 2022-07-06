@@ -1,0 +1,222 @@
+body 
+{
+background-color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+font: 1.4em 'VT323', monospace;
+flex-direction: column;
+white-space: pre;
+}
+.uploading
+{
+color: #00eaff;
+font: 1.4em 'VT323', monospace;
+}
+.dnloading
+{
+color: #e5ff60;
+font: 1.4em 'VT323', monospace;
+}
+.uploading::after 
+{
+content: '';
+-webkit-animation-name: uploading;
+animation-name: uploading;
+-webkit-animation-duration: 1.5s;
+animation-duration: 1.5s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+white-space: pre;
+}
+.dnloading::after 
+{
+content: '';
+-webkit-animation-name: downloading;
+animation-name: downloading;
+-webkit-animation-duration: 1.5s;
+animation-duration: 1.5s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+white-space: pre;
+}
+@-webkit-keyframes uploading 
+{
+0%, 100% 
+{
+content: ' [      ]';
+}
+10% 
+{ 
+content: ' [>     ]';
+}  
+20% 
+{ 
+content: ' [>>    ]';
+}
+30% 
+{ 
+content: ' [>>>   ]';
+}
+40% 
+{ 
+content: ' [ >>>  ]';
+}  
+50% 
+{ 
+content: ' [  >>> ]';
+}
+60% 
+{ 
+content: ' [   >>>]';
+} 
+70% 
+{ 
+content: ' [    >>]';
+}  
+80% 
+{ 
+content: ' [     >]';
+} 
+90% 
+{ 
+content: ' [      ]';
+}
+}
+@keyframes uploading 
+{
+0%, 100% 
+{
+content: ' [      ]';
+}
+10% 
+{ 
+content: ' [>     ]';
+}  
+20% 
+{ 
+content: ' [>>    ]';
+}
+30% 
+{ 
+content: ' [>>>   ]';
+}
+40% 
+{ 
+content: ' [ >>>  ]';
+}  
+50% 
+{ 
+content: ' [  >>> ]';
+}
+60% 
+{ 
+content: ' [   >>>]';
+} 
+70% 
+{ 
+content: ' [    >>]';
+}  
+80% 
+{ 
+content: ' [     >]';
+} 
+90% 
+{ 
+content: ' [      ]';
+}
+}
+@-webkit-keyframes downloading 
+{
+0%, 100% 
+{
+content: ' [      ]';
+}
+10% 
+{ 
+content: ' [     <]';
+}  
+20% 
+{ 
+content: ' [    <<]';
+}
+30% 
+{ 
+content: ' [   <<<]';
+}
+40% 
+{ 
+content: ' [  <<< ]';
+}  
+50% 
+{ 
+content: ' [ <<<  ]';
+}
+60% 
+{ 
+content: ' [<<<   ]';
+} 
+70% 
+{ 
+content: ' [<<    ]';
+}  
+80% 
+{ 
+content: ' [<     ]';
+} 
+90% 
+{ 
+content: ' [      ]';
+}
+}
+@keyframes downloading 
+{
+0%, 100% 
+{
+content: ' [      ]';
+}
+10% 
+{ 
+content: ' [     <]';
+}  
+20% 
+{ 
+content: ' [    <<]';
+}
+30% 
+{ 
+content: ' [   <<<]';
+}
+40% { 
+content: ' [  <<< ]';
+}  
+50% 
+{ 
+content: ' [ <<<  ]';
+}
+60% 
+{ 
+content: ' [<<<   ]';
+} 
+70% 
+{ 
+content: ' [<<    ]';
+}  
+80% 
+{ 
+content: ' [<     ]';
+} 
+90% 
+{ 
+content: ' [      ]';
+}
+}
